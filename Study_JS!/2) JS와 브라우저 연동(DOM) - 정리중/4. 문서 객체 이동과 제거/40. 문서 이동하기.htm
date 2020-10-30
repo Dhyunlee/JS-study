@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 문서객체 이동-->  
+    <div id="first-div"> <!-- first-div형태가 기본 -->
+        <h1>Hello World!!</h1>
+    </div>
+    <hr />
+    <div id="second-div">
+
+     <script>
+     let firstDiv = document.getElementById("first-div");
+     let secondDiv = document.getElementById("second-div");
+     let header = document.querySelector("h1");
+     secondDiv.appendChild(header); // first-div에 있던 "Hello World!!"가 second-div 아래쪽으로 이동!
+     </script>   
+          
+    </div>
+</body>
+</html>

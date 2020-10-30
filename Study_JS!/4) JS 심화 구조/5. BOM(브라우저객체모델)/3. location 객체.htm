@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*
+        location 객체(간단히 보고 넘어가기!)
+         : 웹 브라우저의 주소 표시줄과 관련된 객체입니다. 
+          => 프로토콜의 종류, 호스트 이름, 문서위치등의 정보가 있다. 
+          => 이 객체는 페이지를 이동할 때 많이 사용한다. 
+        */
+
+//    location 객체의 속성 알아보기 (객체의 속성 확인: p304참조)  
+    let output = '';
+    for(let key in location) {
+        output += '●'+ key + ':' + location[key] +'\n';
+    }
+    console.log(output);
+
+    /* 
+    객체의 메서드
+     : assign(link): 현재위치를 이동합니다.
+       reload(): 새로고침합니다.
+       replace(link): 현재 위치를 이동합니다.
+    */
+
+    document.write(location.assign("http://www.naver.com"))
+//      location.replace("http://www.naver.com")
+//   location.reload()
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

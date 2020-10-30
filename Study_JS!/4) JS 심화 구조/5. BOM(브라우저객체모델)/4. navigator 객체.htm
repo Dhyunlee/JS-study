@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+    navigator 객체
+     : 브라우저 공급자 및 버전 정보 등을 포함한 브라우저에 대한 다양한 정보를 저장하는 객체
+    */
+//  navigator 객체의 속성 보기(속성확인: p306참조)
+    let output = '';
+    for(let key in navigator) {
+        output += '●'+ key + ':' + navigator[key] +'\n';
+    }
+    console.log(output);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

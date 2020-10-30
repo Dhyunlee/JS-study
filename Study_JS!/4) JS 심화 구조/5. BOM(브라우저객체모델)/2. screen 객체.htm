@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+     /*
+     screen 객체
+      : 웹 브라우저의 화면이 아닌 운영체제 화면의 속성을 갖는 객체
+     */
+
+    // screen 객체의 속성 알아보기
+     let output = '';
+    for(let key in screen) {
+        output += '●'+ key + ':' + screen[key] +'\n';
+    }
+    console.log(output);
+    // screen 객체 속성에서 많이 사용하는 것은 width, height 속성이다. (속성은 p303참조)
+
+    // 브라우저의 크기를 화면에 일치하는 방법
+
+      let child = window.open('', '', 'width=300, height=200');
+        let width = screen.width;
+        let height = screen.height;
+        child.moveTo(0, 0);
+        child.resizeTo(width, height);
+        // 1초마다 함수를 실행합니다.
+        setInterval(function () {
+            child.resizeBy(-20, -20);
+            child.moveBy(10, 10);
+        }, 1000); // 1초마다 크기를 변환하고 이동해 점점 가운데로 수렴한다. 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // 예제(body 내부에 h1태그로 즐거운 자바크립트를 5번 출력하기)
+
+    window.onload = function() {
+      for(let i = 0; i<=5; i++) {
+      let Text = document.createElement('h1');
+      Text.innerHTML = "즐거운 자바스크립트" + i; 
+      document.body.appendChild(Text);
+      }
+    
+    }
+</script>    
+</head>
+<body>
+    
+</body>
+</html>
