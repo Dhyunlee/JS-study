@@ -49,7 +49,7 @@ const nickname = animal.name;
 console.log(nickname); // 멍멍이
 
 /*
-위 코드에서  animal.name 값을 nickname 값에 담고 있는데요, 이름이 같다면 그냥 우리가 이전에 배웠던 대로 
+위 코드에서  animal.name 값을 nickname 값에 담고 있, 이름이 같다면 그냥 우리가 이전에 배웠던 대로 
 비구조화 할당을 쓰면 되는데 지금은 이름이 서로 다르다. 이런 상황에서 문자를 사용해서 바꿀 수 있다. 
 */
 
