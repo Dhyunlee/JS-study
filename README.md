@@ -27,9 +27,9 @@
 ## &nbsp; 2) 자바스크립트 기본 지식  
 [1) 변수와 상수](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/1.%20variable%20and%20constant.md)  
 [2) 자료형에 대해](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/2.%20data%20type.md)  
-[3) 문자열 자료형](#)  
-[4) 숫자 자료형](#)  
-[5) 불린 자료형과 undefine, null ](#)  
+[3) 문자열 자료형](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/3.%20string.md)  
+[4) 숫자 자료형](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/4.%20number.md)  
+[5) 불린 자료형과 undefine, null ](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/5.%20boolean%20and%20undefined%2C%20null.md)  
 [6) 연산자](#)  
 [7) 일치 연산자](#)  
 [8) 자료형 검사](#)  
