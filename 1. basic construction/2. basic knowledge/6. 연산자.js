@@ -1,309 +1,125 @@
-window.onload = function () {
-  /*
-   5. 연산자
-       : 하나 이상의 표현식을 대상으로 산술, 할당, 비교, 논리,
-         타입 연산등을 수행해 하나의 값을 만든다. 이때 연산의 
-         대상을 피연산자라고 한다. 
-         
-         자바스크립트는 여러 종류의 연산을 위한 다양한 연산자를
-         제공하고 있다. 
-         
-         
-     [1] 산술 연산자 
-         : 사칙연산을 다루는 가장 기본적이면서도 많이 사용하는 연산자이다. 
-           산술 연산자는 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의
-           결합 방향은 왼쪽에서 오른쪽이다.    
-  
-     산술 연산자 종류 |                 설명
-            +          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더함.
-            -          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 뺌.
-            *          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱함.
-            /          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 나눈 후, 그 몫을 반환.
-            %          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 나눈 후, 그 나머지를 반환.
-  
-  */
-  let x = 10, y = 4;
-  console.log('x + y =', x + y)
-  console.log('x - y =', x - y)
-  console.log('x * y =', x * y)
-  console.log('x / y =', x / y)
-  console.log('x % y =', x % y)
-
-  /* 
-    [연산자 우선순위]
-      - 연산자의 우선순위는 수식 내에 여러 연산자가 함께 등장할 때, 어느 연산자가 
-        먼저 처리되어야 하는 지를 결정한다. 
-      
-        ○ 연산자 우선순위는 (곱셈 === 나눗셈) > (덧셈 === 뺄셈) 순이다.
-        ○ 곱셈, 나눗셈 보다 우선순위가 낮은 덧셈, 뺄셈이라도 괄호()연산자를 사용하면 
-          순서가 변경된다. 즉, 괄호() 연산자를 사용한 쪽을 먼저 처리한다. 
-      
-   */
-  console.log(5 + 3 * 2);
-  console.log((5 + 3) * 2);
+// # 연산자
+let x = 10, y = 4;
+console.log('x + y =', x + y);
+console.log('x - y =', x - y);
+console.log('x * y =', x * y);
+console.log('x / y =', x / y);
+console.log('x % y =', x % y);
 
 
-
-  /*
-     [2] 대입 연산자
-         : 변수에 값을 대입할 때 사용하는 이항 연산자이며, 피연산자들의 결합 방향은 
-           오른쪽에서 왼쪽이다. 또한, 앞서 살펴본 산술 연산자와 결합한 다양한 복합 
-           대입 연산자가 존재한다.
-  
-    대입 연산자 종류 |                 설명
-          =	            왼쪽 피연산자에 오른쪽 피연산자의 값을 대입함.
-          +=	          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더한 후,
-                        그 결괏값을 왼쪽 피연산자에 대입함.
-          -=	          왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺀 후, 
-                        그 결괏값을 왼쪽 피연산자에 대입함.
-          *=	          왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱한 후, 
-                        그 결괏값을 왼쪽 피연산자에 대입함.
-          /=	          왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 
-                        그 결괏값을 왼쪽 피연산자에 대입함.
-          %=	          왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 
-                        그 나머지를 왼쪽 피연산자에 대입함.
-  
-      ☞ (+=, -=, *=, /=, %=)연산자는 복합 대입 연산자이다. 
-  
-  */
-  let x = 12, y = 27, z = 5;
-  console.log('[x = x - 5] = ', x = x - 5)
-  console.log('y -= 5 =', y -= 5); // y = y - 5 와 같은 표현임.
-  console.log('z =- 5 =', z = - 5); // z = - 5 와 같은 표현임. 
-  //z =- 5 연산은 단순히 -5를 변수 z에 할당,  y = y - 5연산과 비교하여 살펴보자!
+// * 연산자 우선순위 *
+console.log(5 + 3 * 2);
+console.log((5 + 3) * 2);
 
 
-  /*
-     [3] 증감 연산자
-         : 증감 연산자는 피연산자를 1씩 증가 혹은 감소시킬 때 사용하는 연산자이다. 
-           이 연산자는 피연산자가 단 하나뿐인 단항 연산자이다.
-           여기서 주목해야 할 것은 해당 연산자가 피연산자의 어느 쪽에 위치하는가에 따라 
-           연산의 순서 및 결과가 달라진다는 것이다.
-           
-     증감 연산자 종류    |                 설명
-          변수++	         먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴. (후위)
-          ++변수           먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함. (전위)
-          변수--	         먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킴. (후행)          
-          --변수	         먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 진행함. (전위)
-  
-     후위(후행) 증감 연산자: 해당 문장을 처리한 후 값을 증가하거나 감소시킨다. 
-     전위(선행) 증감 연산자: 먼저 값을 증가하거나 감소시킨 후 해당 문장을 처리한다.   
-  
-  */
-  let num1 = 10
-  console.log(num1++); //10
-  console.log(num1++); //11
-  console.log(num1++); //12
-  console.log(num1); //13
+// * 대입 연산자 *
+let x = 12, y = 27, z = 5;
+console.log('[x = x - 5] = ', x = x - 5);
+console.log('y -= 5 =', y -= 5);   // y = y - 5 와 같은 표현임.
+console.log('z =- 5 =', z = - 5);  // z = - 5 와 같은 표현임. 
 
-  let num2 = 10
-  console.log(++num2); //11
-  console.log(++num2); //12
-  console.log(++num2); //13
-  console.log(num2); //13
+//z =- 5 연산은 단순히 -5를 변수 z에 할당,  y = y - 5연산과 비교하여 살펴보자!
 
 
+// * 증감 연산자 *
+let num1 = 10
+console.log(num1++); //10
+console.log(num1++); //11
+console.log(num1++); //12
+console.log(num1); //13
 
-  /*
-     [4] 비교 연산자
-        : 피연산자 사이의 상대적인 크기를 판단하여, 참(true)과 거짓(false)을 반환한다.
-          비교 연산자는 모두 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.
-  
-        ○ 자바스크립트에서 비교 연산자는 피연산자의 타입에 따라 두가지 기준으로 비교 연산을 진행한다.
-       - 피연산자 둘다 숫자: 해당 숫자를 서로 비교
-       - 피연산자 둘다 문자열: 문자열을 사전순으로 비교하되 앞쪽일수록 작다.
-        → 유니코드 문자의 코드 값을 기준으로 비교하므로 모든 언어를 비교하는 것이 가능!  
-  
-     (1) 동등 / 일치 비교 연산자      
-     비교 연산자 종류    |                 설명     
-      ==	                왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.(동등 비교)
-      ===	                왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함. (일치 비교)
-      !=	                왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함. (부등 비교)
-      !==	                왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함. (불일치 비교)
-     
-      ○ 일치 비교 연산자를 사용할 것을 권장
-         : 자바스크립트는 연산를 처리할 때, 암묵적으로 타입이 자동 변환되기도 한다. 이를 암묵적 타입 변환이라 한다. 
-           여기서 일치 비교 연산자 사용을 권장하는 이유는 동등 비교 연산자는 좌항과 우항의 피연산자를 비교할 때 암묵적
-           타입 변환을 통해 타입을 일치시킨 후 같은 값을 갖는지 비교한다. 따라서 동등 비교 연산자는 타입은 다르지만 암
-           묵적 타입 변환을 통해 타입을 일치시켜 비교하므로 예측하기 어려운 결과를 보여주므로 사용하지 않는 편이 좋다.     
-    
-      
-  
-     (2) 대소 관계 비교 연산자
-   
-     비교 연산자 종류    |                 설명      
-      >	                  왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
-      >=	                  왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
-      <	                  왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
-      <=	                  왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.  
-  
-  
-  */
-
-  //동등 / 일치 비교 연산자
-  console.log('' == '0')  // false
-  console.log(0 == '')  // true
-  console.log(0 == '0')  // true
-
-  console.log(false == 'false')  // false
-  console.log(false == '0')  // true
-
-  console.log(false == undefined)  // false
-  console.log(false == null)  // false
-  console.log(null == undefined)  // true
-
-  console.log(5 != 8)  // true
-  console.log(5 != 5)  // false
-  console.log(5 != '5')  // false
-
-  console.log(5 !== 8) // true
-  console.log(5 !== 5) // false
-  console.log(5 !== '5') // true
+let num2 = 10
+console.log(++num2); //11
+console.log(++num2); //12
+console.log(++num2); //13
+console.log(num2); //13
 
 
-  // 대소 관계 비교 연산자
-  console.log(5 > 2) //true
-  console.log(5 < -5) //false
-  console.log(12 >= 12) //true
-  console.log(5 <= 0) //false
-  console.log('가방' < '하마') //true
+//  * 비교 연산자 *
+// 1) 동등 / 일치 비교 연산자
+console.log('' == '0');  // false
+console.log(0 == '');  // true
+console.log(0 == '0');  // true
+
+console.log(false == 'false');  // false
+console.log(false == '0');  // true
+
+console.log(false == undefined);  // false
+console.log(false == null);  // false
+console.log(null == undefined);  // true
+
+console.log(5 != 8);  // true
+console.log(5 != 5);  // false
+console.log(5 != '5');  // false
+
+console.log(5 !== 8); // true
+console.log(5 !== 5); // false
+console.log(5 !== '5'); // true
 
 
-
-  /*
-     [5] 논리 연산자
-         : 주어진 논리식을 판단하여, 불 자료형의 값인 참(true)과 거짓(false)을 반환되는 연산자이다.
-           && 연산자과 || 연산은 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.
-           ! 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.
-  
-  
-     논리 연산자 종류    |                 설명  
-          &&	        논리식이 모두 참이면 참을 반환함. (논리 AND 연산자, 논리곱 연산자)
-          ||	        논리식 중에서 하나라도 참이면 참을 반환함. (논리 OR 연산자, 논리합 연산자)
-          !	             논리식의 결과가 참이면 거짓을, 거짓이면 참을 반환함. (논리 NOT 연산자, 논리 부정 연산자)
-     
-  
-     [논리 연산자의 결과표]
-     
-     A	   |   B	  |   A && B	 |   A || B	|     !A
-    true	true	  |     true	      true	      false
-    true	false  |	  false	      true	      false
-    false	true	  |     false	      true	      true
-    false	false  |	  false	      false	      true
-  
-  */
-
-  let a = true, b = false
-  console.log(a && b); // false  
-  // a가 true이라면, b가 결과값이 된다. 반면, a가 false이라면 결과는 a가 된다.
-  console.log(a || b); // true  
-  // a가 true이라면 결과는 a가 된다. 반면, a가 false이라면 결과는 b가 된다. 
-  console.log(!a);  // false
+// 2) 대소 관계 비교 연산자
+console.log(5 > 2); //true
+console.log(5 < -5); //false
+console.log(12 >= 12); //true
+console.log(5 <= 0); //false
+console.log('가방' < '하마'); //true
 
 
-  // 연산 과정
-  console.log(30 > 20 || 20 > 10);
-  //       ↓
-  console.log(true || ture);
-  //       ↓
-  console.log(true);
+// * 논리 연산자 *
+let a = true, b = false;
+console.log(a && b); // false  
+// a가 true이라면, b가 결과값이 된다. 반면, a가 false이라면 결과는 a가 된다.
+console.log(a || b); // true  
+// a가 true이라면 결과는 a가 된다. 반면, a가 false이라면 결과는 b가 된다. 
+console.log(!a);  // false
 
 
-
-  /*
-      [6] 그외 연산자
-  
-     (1) 문자열 연결 연산자 
-          : 자바스크립트에서 덧셈(+)연산자는 피연산자의 타입에 따라 두가지 다른 연산을 수행한다. 
-  
-         1) 피연산자 둘 다 숫자면, 산술 연산인 덧셈을 수행
-         2) 피연산자 둘 중 하나라도 문자열이면, 문자열 연결 연산을 수행 
-  
-  */
-
-  let strTest1 = 3 + 2;
-  let strTest2 = '안녕!' + ' JavaScript야 ~';
-  let strTest3 = 12 + '월'
-
-  console.log(strTest1); // 피연산자 둘 다 숫자면, 산술 연산인 덧셈을 수행
-  console.log(strTest2); // 피연산자 둘 다 문자열이면, 문자열 연결 연산을 수행 
-  console.log(strTest3); // 피연산자 둘 중 하나라도 문자열이면, 문자열 연결 연산을 수행 
+// * 연산 과정 *
+console.log(30 > 20 || 20 > 10);
+//       ↓
+console.log(true || ture);
+//       ↓
+console.log(true);
 
 
-  /* 
-      (2) 쉼표 연산자
-          : 쉼표 연산자는 여러 표현식을 코드 한 줄에 쓸 때 사용된다. 
-  */
+// * 그외 연산자 *
+let strTest1 = 3 + 2;
+let strTest2 = '안녕!' + ' JavaScript야 ~';
+let strTest3 = 12 + '월';
 
-  let restVal1 = 2, restVal2 = '월';
-  console.log(restVal1 + restVal2);
-
-  // 변수에 여러 값을 한 줄로 작성할 수 있다. 
-  let a = (12 + 2, 3 + 7);
-  console.log(a)
-  /*
-  위 예시에서 첫 번째 표현식 1 + 2은 평가가 되지만 그 결과는 버려지고, 3 + 4만 평가되어 a에 할당된다.
-  
-  변수를 선언할 때 쉼표를 사용하여 여러 변수를 
-   let a = 2,
-      b = 3; 
-  이와 같이 선언했지만, 가독성을 위해서는 되도록 사용하지 않는 게 좋다. 
-   let a = 2;
-   let b = 3;
-  이와 같은 방법을 선호하는 편이다. 
-  */
+console.log(strTest1); // 피연산자 둘 다 숫자면, 산술 연산인 덧셈을 수행
+console.log(strTest2); // 피연산자 둘 다 문자열이면, 문자열 연결 연산을 수행 
+console.log(strTest3); // 피연산자 둘 중 하나라도 문자열이면, 문자열 연결 연산을 수행 
 
 
-  /* 
-      (3) delete 연산자
-          : 피연산자인 객체, 객체의 프로퍼티(property) 또는 배열의 요소(element) 등을 삭제해 줍니다.
-        - 피연산자가 성공적으로 삭제되었을 경우에는 참(true)을 반환하고, 삭제하지 못했을 경우에는 거짓(false)을 반환합니다.
-  
-        - 이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽입니다.  
-  */
+// * 쉼표 연산자 *
+let restVal1 = 2, restVal2 = '월';
+console.log(restVal1 + restVal2);
 
-  let arr = [1, 2, 3];          // 배열 생성
-  delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
-  console.log(arr); // [1, 2, ]
-  // 배열에 빈자리가 생긴 것이나 그 비어있는 자리에 undefined값이 설정된 것은 아님, 즉 비어있는 값이라는 뜻으로 undefined이 출력
-  console.log('arr[2]: ' + arr[2]);
-  // 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
-  console.log('배열 길이: ' + arr.length);
+// 변수에 여러 값을 한 줄로 작성할 수 있다. 
+let a = (12 + 2, 3 + 7);
+console.log(a);
 
 
-  /* 
-      (4) typeof 연산자
-          : typeof 연산자는 피연산자의 타입을 반환합니다.
-         - 이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽입니다.
-  
-   
-     값	              | typeof 연산자의 결괏값    
-  -----------------------------------------------------------------
-    숫자, NaN	        :   "number"
-    문자열	          :   "string"
-    true, false	     :  "boolean"
-    null	           :  "object"
-    undefined	       :   "undefined"
-    함수	           :  "function"
-    함수가 아닌 객체	:  "object" 
-  ------------------------------------------------------------------
-  */
-
-  console.log('문자열:', typeof "문자열")   // string
-  console.log('10:', typeof 10)         // number
-  console.log('NaN:', typeof NaN)       // number
-  console.log('false:', typeof false)      // boolean
-  console.log('undefined:', typeof undefined)  // undefined
-  console.log('new Date():', typeof new Date()) // object
-  console.log('null:', typeof null)       // object
+// * delete 연산자 *
+let arr = [1, 2, 3];          // 배열 생성
+delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
+console.log(arr); // [1, 2, ]
+// 배열에 빈자리가 생긴 것이나 그 비어있는 자리에 undefined값이 설정된 것은 아님, 즉 비어있는 값이라는 뜻으로 undefined이 출력
+console.log('arr[2]: ' + arr[2]);
+// 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
+console.log('배열 길이: ' + arr.length);
 
 
-  /* 
-     (5) 제곱 연산자 
-            : 수를 제곱할 때 사용하는 연산자 (잘 사용하지는 않음)  
-           - '숫자**(제곱할 수)'형태로 쓰인다.
-     
-  */
+// * typeof 연산자 *
+console.log('문자열:', typeof "문자열");   // string
+console.log('10:', typeof 10);       // number
+console.log('NaN:', typeof NaN);       // number
+console.log('false:', typeof false);      // boolean
+console.log('undefined:', typeof undefined);  // undefined
+console.log('new Date():', typeof new Date()); // object
+console.log('null:', typeof null);       // object
 
-  console.log('3의 3제곱은?', 3 ** 3)
-}
+
+// * 제곱 연산자 *
+console.log('3의 3제곱은?', 3 ** 3);
