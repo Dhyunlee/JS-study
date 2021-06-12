@@ -30,9 +30,9 @@
 [3) 문자열 자료형](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/3.%20string.md)  
 [4) 숫자 자료형](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/4.%20number.md)  
 [5) 불린 자료형과 undefine, null ](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/5.%20boolean%20and%20undefined%2C%20null.md)  
-[6) 연산자](#)  
-[7) 일치 연산자](#)  
-[8) 자료형 검사](#)  
+[6) 연산자](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/6.%20operator.md)  
+[7) 일치 연산자](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/7.%20%20identity%20operator.md)  
+[8) 자료형 검사](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/8.%20type%20check.md)  
 [9) 자료형 변환](#)  
       
 ## 3. Web API
