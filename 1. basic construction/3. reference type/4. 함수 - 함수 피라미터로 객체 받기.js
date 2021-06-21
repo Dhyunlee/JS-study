@@ -13,9 +13,10 @@ const student2 = {
 
 function stuInfo(value) {
     const text = `
-            이름:${value.name} 
-            학번:${value.stuID}
-            학년:${value.class}`;
+        이름:${value.name} 
+        학번:${value.stuID}
+        학년:${value.class}
+    `;
     console.log(text);
 }
 
