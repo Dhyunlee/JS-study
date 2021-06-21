@@ -1,47 +1,26 @@
-window.onload = function () {
+// 배열 선언
+let arr = [10, 20, 30, 40, 50, 60];
 
-  /*
-    배열
-     : [](대괄호)를 사용하여 나타낸다. 이때 []안에 입력된 값을 요소라고 하며, 
-       그 값의 위치를 가리키는 숫자를 인덱스라고 한다. 첫번째 인덱스는 0으로 
-       시작하며 존재하지 않는 요소에 접근하면 undefined를 반환한다.
-        
-         -> 아래 코드에서, 배열 arr의 10을 '0번째 인덱스'라고 한다. 
+// 배열 참조(= 요소 접근)
+console.log(arr[1]); // 1번째에 인덱스에 있는 20을 출력
 
-  */
+// 배열의 요소 수정
+console.log(arr[1] = 30); // 기존의 값(20)이 30으로 변경!
+console.log(arr);
 
-  // 배열 선언
-  let arr = [10, 20, 30, 40, 50, 60];  
+// 배열의 요소 추가
+console.log(arr[6] = 40) // 6번째 인덱스에 40을 추가
+console.log(arr)
 
-  // 배열 참조(= 요소 접근)
-  console.log(arr[1]); // 1번째에 인덱스에 있는 20을 출력
-
-  // 배열의 요소 수정
-  console.log(arr[1] = 30); // 기존의 값(20)이 30으로 변경!
-  console.log(arr);
-
-  // 배열의 요소 추가
-  console.log(arr[6] = 40) // 6번째 인덱스에 40을 추가
-  console.log(arr)
-
-  // 배열의 요소 제거
-  console.log(delete arr[3]) // 3번째 인덱스 40을 제거
-  console.log(arr) // 요소가 제거는 됬지만 길이는 변하지 않음 
-                   //  -> 그 자리를 empty(비어있는 요소)로 채움
-  /* 
-     배열의 길이(문자열에서도 length속성 사용가능)
-      : length는 요소의 길이를 나태내는 속성이다.
-  */
-  let arr2 = ['강아지', '신발', 12, 22]
-  console.log(arr2.length) // 길이(= 요소의 갯수)가 4인 배열 arr2
-  console.log(arr2[arr2.length-1]) // 마지막요소 출력[마지막요소 = 길이(length) - 1]
-  arr2.push('추가요소') // push메서드는 배열 요소를 추가
-  console.log(arr2)
-
-  // 문자열의 길이
-  let str = "abcdef";
-  console.log(str.length); //길이 6인 문자열
-  console.log(str[0]); //문자열 0번째 인덱스 출력!
+// 배열의 요소 제거
+console.log(delete arr[3]) // 3번째 인덱스 40을 제거
+console.log(arr) // 요소가 제거는 됬지만 길이는 변하지 않음 
+//  -> 그 자리를 empty(비어있는 요소)로 채움
 
 
-}
+//배열의 길이
+let arr2 = ['강아지', '신발', 12, 22]
+console.log(arr2.length) // 길이(= 요소의 갯수)가 4인 배열 arr2
+console.log(arr2[arr2.length - 1]) // 마지막요소 출력[마지막요소 = 길이(length) - 1]
+arr2.push('추가요소') // push메서드는 배열 요소를 추가
+console.log(arr2)
