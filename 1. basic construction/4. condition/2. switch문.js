@@ -1,71 +1,49 @@
-window.onload = function () {
+// switch문
+
+// switch 문을 이용한 짝수, 홀수 구분하기
+let rawInput = prompt('숫자를 입력해주세요', '숫자');
+
+if (rawInput == ' ') {
+    console.log('입력하세요!');
+}
+
+switch (rawInput % 2) {
+  case 0:
+    console.log('짝수 입니다.')
+    break;
+  case 1:
+    console.log('홀수 입니다.')
+    break;
+  default:
+    console.log('숫자가 아닙니다.')
+    break;
+}
 
 
-  /*
-     switch문
-      : if else문과 마찬가지로 주어진 조건 값에 따라 프로그램이 다른 명령을 수행하도록 하는 조건문 
-      swich문은 ()안에 조건식을 넣고, 입력받은 값이 해당 case문의 값과 동일하다면 case문을 실행하고 
-      break키워드에 의해 switch문을 빠져나온다.  
-      if 조건문과 다른 점은 if 조건문처럼 하나씩 조건을 체크해 가며 실행하는 것이 아닌 해당 case문만 
-      실행한다. 
-      
-      [기본 구조]
-  
-      switch([조건식]) {
-        case [값]:
-          (값이 동일하다면 실행할 코드)
-        break; // 실행코드를 빠져나옴 
-      }
-  
-  */
+// 입력한 숫자에 해당하는 계절 출력하기
 
-  // switch 문을 이용한 짝수, 홀수 구분하기
-  let rawInput = prompt('숫자를 입력해주세요', '숫자')
-  if (rawInput == ' ') {
-    console.log('입력하세요!')
-  }
-  switch (rawInput % 2) {
-    case 0:
-      console.log('짝수 입니다.')
-      break;
-    case 1:
-      console.log('홀수 입니다.')
-      break;
-    default:
-      console.log('숫자가 아닙니다.')
-      break;
-  }
+let input = prompt('숫자를 입력해주세요', '1 ~ 12');
+let month = Number(input);
 
-
-  // 입력한 숫자에 해당하는 계절 출력하기
-
-  let input = prompt('숫자를 입력해주세요', '1 ~ 12')
-  let month = Number(input);
-  switch (month) {
-    case 3:
-    case 4:
-    case 5:
-      console.log('봄 입니다.')
-      break;
-    case 6:
-    case 7:
-    case 8:
-      console.log('여름 입니다.')
-      break;
-    case 9:
-    case 10:
-    case 11:
-      console.log('가을 입니다.')
-      break;
-    case 12:
-    case 1:
-    case 2:
-      console.log('겨울 입니다.')
-      break;
-  }
-/* 
-     prompt()함수로 값을 받아오면 문자열로 가져오기 때문에, 숫자 값을 
-     사용하려면 반드시 숫자 자료형으로 변환해야 한다. 
-*/
-
+switch (month) {
+  case 3:
+  case 4:
+  case 5:
+    console.log('봄 입니다.')
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log('여름 입니다.')
+    break;
+  case 9:
+  case 10:
+  case 11:
+    console.log('가을 입니다.')
+    break;
+  case 12:
+  case 1:
+  case 2:
+    console.log('겨울 입니다.')
+    break;
 }
