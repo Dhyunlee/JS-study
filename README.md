@@ -33,10 +33,22 @@
 &nbsp;&nbsp; [6) 연산자](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/6.%20operator.md)  
 &nbsp;&nbsp; [7) 일치 연산자](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/7.%20%20identity%20operator.md)  
 &nbsp;&nbsp; [8) 자료형 검사](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/8.%20type%20check.md)  
-&nbsp;&nbsp; [9) 자료형 변환](#)    
+&nbsp;&nbsp; [9) 자료형 변환](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/2.%20basic%20knowledge/9.%20type%20change.md)    
         
-## &nbsp; 3) 참조 자료형  
-## &nbsp; 4) 조건문     
+## &nbsp; 3) 참조 자료형   
+&nbsp;&nbsp; [1) 배열](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/1.%20array.md)   
+&nbsp;&nbsp; [2) 함수](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/2.%20functioin%20-%20function%20definition%20.md)   
+&nbsp;&nbsp; [3) 함수 - 내부함수](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/3.%20fuction%20-%20inner%20fuction.md)  
+&nbsp;&nbsp; [4) 함수 - 피라미터로 객체 전달하기](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/4.%20function%20-%20function%20parameter%20.md)    
+&nbsp;&nbsp; [5) 객체 - 객체생성](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/5.%20object.md)    
+&nbsp;&nbsp; [6) 객체 - 속성과 메서드](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/6.%20object%20property%2C%20method.md)   
+&nbsp;&nbsp; [7) 객체 - 동적 속성 추가](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/7.%20object%20-%20add%20property%20and%20delect%20property.md)   
+&nbsp;&nbsp; [8) 객체와 관련된 키워드](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/8.%20object%20-%20element%20discrimination.md)   
+
+## &nbsp; 4) 조건문  
+&nbsp;&nbsp; [1) if / else / if else if 조건문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/4.%20condition/1.%20conditionIf.md)  
+&nbsp;&nbsp; [2) switch문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/4.%20condition/2.%20conditionSwitch.md)  
+
 ## &nbsp; 5) 반복문 
 
 ## 2. Web API
