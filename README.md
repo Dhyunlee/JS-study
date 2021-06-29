@@ -43,7 +43,7 @@
 &nbsp;&nbsp; [5) 객체 - 객체생성](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/5.%20object.md)    
 &nbsp;&nbsp; [6) 객체 - 속성과 메서드](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/6.%20object%20property%2C%20method.md)   
 &nbsp;&nbsp; [7) 객체 - 동적 속성 추가](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/7.%20object%20-%20add%20property%20and%20delect%20property.md)   
-&nbsp;&nbsp; [8) 객체와 관련된 키워드](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/8.%20object%20-%20element%20discrimination.md)   
+&nbsp;&nbsp; [8) 객체와 관련된 키워드](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/3.%20reference%20type/8.%20object%20-%20in%20and%20with%20keyword.md)   
 
 ## &nbsp; 4) 조건문  
 &nbsp;&nbsp; [1) if / else / if else if 조건문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/4.%20condition/1.%20conditionIf.md)  
