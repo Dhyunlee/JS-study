@@ -60,10 +60,22 @@
 &nbsp;&nbsp; [1) while 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/1.%20loopWhile.md)  
 &nbsp;&nbsp; [2) for 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/2.%20loopFor.md)  
 &nbsp;&nbsp; [3) for in/of 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/3.%20loopForIn.md)  
-&nbsp;&nbsp; [4) break와 continue](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/4.%20BreakAndContinue.md)  
+&nbsp;&nbsp; [4) break와 continue](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/4.%20BreakAndContinue.md)
 
 ## 2. DOM
 
 ## 3. 비동기처리와 ajax
 
 ## 4. Javascript Deep Concept
+
+## &nbsp;&nbsp; 1) 제어문
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1) 삼항연산자와 단축평가](https://github.com/Dhyunlee/JavaScript/blob/main/4.%20JavaScript%20deep/1.%20%EC%A0%9C%EC%96%B4%EB%AC%B8/1.%20ternaryOperatorAndShort%20.md)
+
+## &nbsp;&nbsp; 2) 함수
+
+## &nbsp;&nbsp; 3) 객체
+
+## &nbsp;&nbsp; 4) 프로토타입과 클래스
+
+## &nbsp;&nbsp; 5) BOM(브라우저 객체 모델)
