@@ -57,14 +57,12 @@
 
 ## &nbsp; 5) 반복문
 
-&nbsp;&nbsp; [1) while 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/1.%20loopWhile.md)
+&nbsp;&nbsp; [1) while 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/1.%20loopWhile.md)  
 &nbsp;&nbsp; [2) for 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/2.%20loopFor.md)
 &nbsp;&nbsp; [3) for in/of 반복문](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/3.%20loopForIn.md)
 &nbsp;&nbsp; [4) break와 continue](https://github.com/Dhyunlee/JavaScript/blob/main/1.%20basic%20construction/5.%20looping/4.%20BreakAndContinue.md)
 
-## &nbsp; 5) 반복문
-
-## 2. Web API
+## 2. DOM
 
 ## 3. 비동기처리와 ajax
 
